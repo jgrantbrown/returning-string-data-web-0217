@@ -1,3 +1,5 @@
-<h1><%= post.id %>: <%= post.title %></h2>
-<div id="body-<%= post.id %>"><%= truncate post.description %></div>
+<h1><%= post.id %>: <%= post.title %></h1>
+
+<p><%=post.author.name%></p>
+<div id="body-<%= post.id %>"><p><%= truncate post.description %></p></div>
 <button class="js-more" data-id="<%= post.id %>">More...</button>
